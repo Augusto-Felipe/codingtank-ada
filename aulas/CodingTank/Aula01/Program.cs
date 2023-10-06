@@ -76,32 +76,32 @@ namespace Aula01
 
             #region Desafio 2
 
-            //int anoAtual;
-            //int dataNascimento;
-            //int idade;
+            int anoAtual;
+            int dataNascimento;
+            int idade;
 
-            //try
-            //{
-            //    Console.Write("Digite o ano atual: ");
-            //    anoAtual = int.Parse(Console.ReadLine());
+            try
+            {
+                Console.Write("Digite o ano atual: ");
+                anoAtual = int.Parse(Console.ReadLine());
 
-            //    Console.Write("Digite seu ano de nascimento: ");
-            //    dataNascimento = int.Parse(Console.ReadLine());  
+                Console.Write("Digite seu ano de nascimento: ");
+                dataNascimento = int.Parse(Console.ReadLine());
 
-            //    if (dataNascimento < anoAtual)
-            //    {
-            //        idade = anoAtual - dataNascimento;
-            //        Console.WriteLine($"Você tem {idade} anos.");
-            //    }
-            //    else
-            //    {
-            //        Console.WriteLine("Sua data de nascimento deve ser menor que o ano atual.");
-            //    }
-            //}
-            //catch
-            //{
-            //    Console.WriteLine("Entrada inválida de dados, você não digitou um número!");
-            //}
+                if (dataNascimento < anoAtual)
+                {
+                    idade = anoAtual - dataNascimento;
+                    Console.WriteLine($"Você tem {idade} anos.");
+                }
+                else
+                {
+                    Console.WriteLine("Sua data de nascimento deve ser menor que o ano atual.");
+                }
+            }
+            catch
+            {
+                Console.WriteLine("Entrada inválida de dados, você não digitou um número!");
+            }
             #endregion
 
             #region Desafio 3
@@ -122,8 +122,8 @@ namespace Aula01
                 valorGorjeta = valorConta * (porcentagem / 100);
                 valorTotal = valorConta + valorGorjeta;
 
-                Console.WriteLine("GORJETA: " + valorGorjeta.ToString("F2", CultureInfo.InvariantCulture));
-                Console.WriteLine("CONTA: " + valorTotal.ToString("F2", CultureInfo.InvariantCulture));
+                Console.WriteLine("GORJETA: R$" + valorGorjeta.ToString("F2", CultureInfo.InvariantCulture));
+                Console.WriteLine("CONTA: R$" + valorTotal.ToString("F2", CultureInfo.InvariantCulture));
             }
             catch
             {
