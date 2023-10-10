@@ -55,34 +55,42 @@
             #endregion
 
             #region Exercicio 3
-            /*
+            
             Console.Write("Adivinhe um número secreto entre 1 e 100: ");
 
             if (int.TryParse(Console.ReadLine(), out int n))
             {
-                Random random = new Random();
 
-                int numeroAleatorio = random.Next(1, 100);
-
-                Console.WriteLine(numeroAleatorio);
-
-                while (numeroAleatorio != n)
+                if (n < 1 || n > 100)
                 {
-                    if (n > numeroAleatorio)
-                    {
-                        Console.WriteLine("MENOR");
-                        n = int.Parse(Console.ReadLine());
-                    }
-                    else
-                    {
-                        Console.WriteLine("MAIOR");
-                        n = int.Parse(Console.ReadLine());
-                    }
+                    Console.WriteLine("O número deve estar entre 1 e 100!");
                 }
+                else
+                {
+                    Random random = new Random();
 
-                Console.WriteLine("ACERTOU!!! Número aleatório: " + numeroAleatorio);
+                    int numeroAleatorio = random.Next(1, 100);
+
+                    Console.WriteLine(numeroAleatorio);
+
+                    while (numeroAleatorio != n)
+                    {
+                        if (n > numeroAleatorio)
+                        {
+                            Console.WriteLine("MENOR");
+                            n = int.Parse(Console.ReadLine());
+                        }
+                        else
+                        {
+                            Console.WriteLine("MAIOR");
+                            n = int.Parse(Console.ReadLine());
+                        }
+                    }
+
+                    Console.WriteLine("ACERTOU!!! Número aleatório: " + numeroAleatorio);
+                } 
             }
-            */
+            
             #endregion
         }
 
