@@ -89,6 +89,7 @@ namespace Aula03
             #endregion
 
             #region Exercicio 4
+            /*
             List<int> lista = new List<int>();
             int soma = 0;
             int pares = 0;
@@ -119,6 +120,7 @@ namespace Aula03
             Console.WriteLine("Quantidade de numeros lidos: " + lista.Count);
             Console.WriteLine("Soma = " + soma);
             Console.WriteLine("Quantiade de pares = " + pares);
+            */
             #endregion
 
             static void Dic()
